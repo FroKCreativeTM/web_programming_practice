@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fourth practice web page</title>
+		<style>
+			body { background-color : linen; color : green; margin-left : 40px; margin-right : 40px}
+			h3 { text-align : center; color : darkred }
+			hr { height : 5px; border : solid grey; background-color : grey }
+			span { color : blue; font-size : 20px }
+		</style>
+		<script>
+			function show() { // tag image to <img>
+				document.getElementById("fig").src = "test.jpeg";
+			}
+
+			function hide() { // remove image from <img>
+				document.getElementById("fig").src = "";
+			}
+		</script>
+	</head>
+	<body>
+		<h3>Elvis Presley</h3>
+		<hr>
+		<div><img id="fig" src="#" alt="Can't load image file"></div>
+		He was an American singer and actor. In November 1956, he made his film debut in <span onmouseover="show()" onmouseout="hide()">Love Me Tender</span>. 
+		He is often referred to as "<span>the King of Rock and Roll</span>.
+	</body>
+</html>
