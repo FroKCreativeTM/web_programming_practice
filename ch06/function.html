@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>첫 자바스크립트 함수 작성</title>
+        <script>
+            function over(obj) {
+                obj.src = "media/2.jpg";
+            }
+
+            function out(obj) {
+                obj.src = "media/1.jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <h3>마우스를 올려보십시오</h3>
+        <hr>
+        <img src="media/1.jpg" alt="이미지가 없습니다." onmouseover="over(this)" onmouseout="out(this)">
+    </body>
+</html>
